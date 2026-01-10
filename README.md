@@ -1,9 +1,16 @@
 # UIDAI Data Hackathon 2026
 
+![UIDAI Data Hackathon 2026 Banner](uidai_banner.png)
+
 This project is a comprehensive data analysis and visualization tool developed for the UIDAI Data Hackathon 2026. It processes Aadhaar enrolment, demographic update, and biometric update data to identify trends, spatial distributions, and correlations.
 
 ## 🚀 Features
 
+* **Data Aggregation**: Automatically loads and merges multiple CSV datasets (Enrolment, Demographic, Biometric).
+* **Data Preprocessing**: Handles missing values, inconsistent column names, and date formats.
+* **Trend Analysis**:
+  * **Temporal**: Analyzes trends over time for enrolments and updates.
+  * **Spatial**: Identifies top states and districts with the highest activity.
 * **Data Aggregation**: Automatically loads and merges multiple CSV datasets (Enrolment, Demographic, Biometric).
 * **Data Preprocessing**: Handles missing values, inconsistent column names, and date formats.
 * **Trend Analysis**:
@@ -16,6 +23,35 @@ This project is a comprehensive data analysis and visualization tool developed f
   * Correlations heatmaps (code available).
 * **Report Generation**: Automatically compiles all insights and visualizations into a professional PDF report (`UIDAI_Hackathon_Submission.pdf`).
 * **Google Colab Support**: Includes a specialized notebook for running the analysis seamlessly in the cloud.
+
+## 🔄 Data Flow
+
+```mermaid
+graph TD
+    subgraph Input Data
+        A[Enrolment CSVs]
+        B[Demographic Update CSVs]
+        C[Biometric Update CSVs]
+    end
+
+    subgraph Processing ['src/']
+        D(loader.py<br/>Data Aggregation)
+        E(analysis.py<br/>Cleaning & Analysis)
+    end
+
+    subgraph Outputs ['output/']
+        F[Visualizations<br/>.png plots]
+        G[Final Report<br/>PDF]
+    end
+
+    A --> D
+    B --> D
+    C --> D
+    D --> E
+    E --> F
+    E -->|Summary Stats| G
+    F --> G
+```
 
 ## 📂 Project Structure
 
