@@ -1,119 +1,79 @@
-# UIDAI Data Hackathon 2026
+<div align="center">
 
-![UIDAI Data Hackathon 2026 Banner](uidai_banner.png)
+  <!-- NATIVE ANIMATED CYBER BANNER -->
+  <img src="assets/banner.svg" width="100%" alt="UIDAI DATA HACKATHON 2026 Banner" />
 
-This project is a comprehensive data analysis and visualization tool developed for the UIDAI Data Hackathon 2026. It processes Aadhaar enrolment, demographic update, and biometric update data to identify trends, spatial distributions, and correlations.
+  <br/>
 
-## 🚀 Features
+  <!-- ANIMATED TYPING SVG -->
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&multiline=false&width=650&height=40&lines=%F0%9F%87%AE%F0%9F%87%B3+Societal+Trends+in+Aadhaar+Enrolment+%26+Updates;%F0%9F%94%8D+Anomaly+Detection+%26+Demographic+Shift+Modeling;%F0%9F%93%8A+Geographic+Saturation+%26+Service+Bottleneck+Analysis;%F0%9F%92%A1+Data-Driven+Governance+%26+System+Optimization" alt="Typing SVG" />
 
-* **Data Aggregation**: Automatically loads and merges multiple CSV datasets (Enrolment, Demographic, Biometric).
-* **Data Preprocessing**: Handles missing values, inconsistent column names, and date formats.
-* **Trend Analysis**:
-  * **Temporal**: Analyzes trends over time for enrolments and updates.
-  * **Spatial**: Identifies top states and districts with the highest activity.
-* **Data Aggregation**: Automatically loads and merges multiple CSV datasets (Enrolment, Demographic, Biometric).
-* **Data Preprocessing**: Handles missing values, inconsistent column names, and date formats.
-* **Trend Analysis**:
-  * **Temporal**: Analyzes trends over time for enrolments and updates.
-  * **Spatial**: Identifies top states and districts with the highest activity.
-  * **Demographic**: examines age group distributions (0-5, 5-17, 18+).
-* **Visualization**: Generates high-quality charts:
-  * Line plots for time-series analysis.
-  * Bar charts for state-wise comparisons.
-  * Correlations heatmaps (code available).
-* **Report Generation**: Automatically compiles all insights and visualizations into a professional PDF report (`UIDAI_Hackathon_Submission.pdf`).
-* **Google Colab Support**: Includes a specialized notebook for running the analysis seamlessly in the cloud.
+  <br/>
 
-## 🔄 Data Flow
+  <!-- TECH BADGES -->
+  <p align="center">
+    <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/Jupyter-Big%20Data-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
+    <img src="https://img.shields.io/badge/Pandas-Analytics-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+    <img src="https://img.shields.io/badge/Seaborn-Statistical%20Plots-blue?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+  </p>
+
+</div>
+
+---
+
+### 🌟 System Overview
+
+**Unlocking Societal Trends in Aadhaar Enrolment and Updates** is a data science research framework developed for the UIDAI Data Hackathon. It performs deep statistical analysis, anomaly detection, and spatial-temporal modeling across millions of demographic registration records to uncover societal migration trends and service access bottlenecks.
+
+---
+
+### 🔬 Operational Architecture & Data Pipeline Flow
 
 ```mermaid
-graph TD
-    subgraph Input Data
-        A[Enrolment CSVs]
-        B[Demographic Update CSVs]
-        C[Biometric Update CSVs]
-    end
-
-    subgraph Processing ['src/']
-        D(loader.py<br/>Data Aggregation)
-        E(analysis.py<br/>Cleaning & Analysis)
-    end
-
-    subgraph Outputs ['output/']
-        F[Visualizations<br/>.png plots]
-        G[Final Report<br/>PDF]
-    end
-
-    A --> D
-    B --> D
-    C --> D
-    D --> E
-    E --> F
-    E -->|Summary Stats| G
-    F --> G
+flowchart LR
+    A[UIDAI Public Enrolment & Update Telemetry] --> B[Data Sanitation & Spatial Geocoding]
+    B --> C[Time-Series Demographic Decomposition]
+    C --> D[State-Wise Saturation Index Modeling]
+    D --> E[Anomalous Registration Spike Detector]
+    E --> F[Societal Insights & Infrastructure Recommendations]
 ```
 
-## 📂 Project Structure
+---
 
+### 🚀 Key Capabilities & Features
+
+- **🔍 Demographic Shift Detection:** Uncovers urban migration patterns through residential address update surges.
+- **📊 Saturation Analysis:** Identifies underserved rural districts lagging in biometric updates.
+- **⚠️ Anomaly Spike Detection:** Flags statistical outliers in regional enrolment batches for data verification.
+- **💡 Policy Recommendations:** Delivers actionable resource allocation guidelines for mobile registration centers.
+
+---
+
+### ⚡ Quickstart & Execution
+
+```bash
+# 1. Clone & enter
+git clone https://github.com/Akshay-Notfound/UIDAI-Data-Hackathon-2026.git
+cd UIDAI-Data-Hackathon-2026
+
+# 2. Launch Jupyter Notebook
+jupyter notebook
 ```
-UIDAI-HACKATHON/
-├── src/
-│   ├── analysis.py                  # Core analysis logic and plotting
-│   ├── loader.py                    # Data loading and aggregation
-│   ├── generate_report.py           # PDF report generation
-│   ├── colab_all_in_one.py          # Consolidated script for Colab
-│   └── aadhaar_hackathon_colab.ipynb # Jupyter Notebook for Colab (Recommended)
-├── output/                          # Generated plots and PDF report
-├── requirements.txt                 # Python dependencies
-├── .gitignore                       # Git exclusion rules
-└── README.md                        # Project documentation
-```
 
-## 🛠️ Installation & Setup
+---
 
-1. **Clone the Repository**
+### 👤 Author & Architecture
 
-    ```bash
-    git clone https://github.com/Akshay-Notfound/UIDAI-Data-Hackathon-2026.git
-    cd UIDAI-Data-Hackathon-2026
-    ```
+**Akshay Shivaji Rathod**  
+*Data & AI Engineer*  
+* 🌐 **Portfolio:** [akshay-notfound.vercel.app](https://akshay-notfound.vercel.app)  
+* 💼 **LinkedIn:** [linkedin.com/in/akshay-rathod-aaab52206](https://www.linkedin.com/in/akshay-rathod-aaab52206/)  
+* 🐙 **GitHub:** [@Akshay-Notfound](https://github.com/Akshay-Notfound)  
 
-2. **Install Dependencies**
-    Ensure you have Python installed, then run:
+---
 
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## 💻 Usage
-
-### Option 1: Running Locally
-
-1. Place your data CSV files in a folder named `UIDAI Data Hackathon 2026` in the project root (or update paths in `src/loader.py`).
-2. Run the report generation script:
-
-    ```bash
-    python src/generate_report.py
-    ```
-
-3. Check the `output/` directory for the `UIDAI_Hackathon_Submission.pdf`.
-
-### Option 2: Google Colab (Recommended)
-
-1. Upload the `UIDAI Data Hackathon 2026` data folder to your Google Drive.
-2. Open `src/aadhaar_hackathon_colab.ipynb` in Google Colab.
-3. The notebook is pre-configured to mount Google Drive and locate your data.
-4. Run all cells to perform the analysis and generate the report.
-
-## 📊 Output
-
-The tool generates a comprehensive PDF report containing:
-
-* **Problem Statement**: Analysis of residents' behavior regarding Aadhaar updates.
-* **Key Findings**: Summarized insights from the data.
-* **Visualizations**: Embedded charts ensuring a clear narrative.
-* **Source Code**: Full Python code appended for reference.
-
-## 📝 License
-
-This project is created for the UIDAI Data Hackathon 2026.
+<div align="center">
+  <sub>Licensed under the MIT License. Designed for scalability, intelligence, and performance.</sub>
+</div>
